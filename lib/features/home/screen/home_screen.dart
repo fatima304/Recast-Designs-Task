@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: 40),
             HomeHeader(),
             SizedBox(height: 10),
-            LoyalityCard(),
+            LoyaltyCard(),
             SizedBox(height: 10),
             VenueSelectionSection(),
           ],

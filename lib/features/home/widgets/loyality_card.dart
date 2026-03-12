@@ -6,8 +6,8 @@ import 'package:recast_design_task/features/home/widgets/loyality_header.dart';
 import 'package:recast_design_task/features/home/widgets/progress_bar.dart';
 import 'package:recast_design_task/features/home/widgets/total_orders_widget.dart';
 
-class LoyalityCard extends StatelessWidget {
-  const LoyalityCard({super.key});
+class LoyaltyCard extends StatelessWidget {
+  const LoyaltyCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,13 +26,13 @@ class LoyalityCard extends StatelessWidget {
           ),
         ],
       ),
-      child: LoyalityItems(),
+      child: LoyaltyItems(),
     );
   }
 }
 
-class LoyalityItems extends StatelessWidget {
-  const LoyalityItems({super.key});
+class LoyaltyItems extends StatelessWidget {
+  const LoyaltyItems({super.key});
 
   @override
   Widget build(BuildContext context) {
