@@ -27,10 +27,10 @@ class AppTextStyles {
     fontSize: 13,
     color: AppColors.white,
   );
-  static TextStyle font7MediumWhite = TextStyle(
+  static TextStyle font10MediumWhite = TextStyle(
     fontFamily: FontFamilyHelper.satoshiFamily,
     fontWeight: FontWeightHelper.medium,
-    fontSize: 7,
+    fontSize: 10,
     color: AppColors.white,
   );
 

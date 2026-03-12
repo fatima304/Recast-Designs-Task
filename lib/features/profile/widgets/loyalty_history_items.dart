@@ -5,44 +5,49 @@ import 'package:recast_design_task/core/constants/app_images.dart';
 import 'package:recast_design_task/core/constants/app_strings.dart';
 import 'package:recast_design_task/core/constants/app_text_styles.dart';
 
-class LoyalitySection extends StatelessWidget {
-  const LoyalitySection({super.key});
+class LoyaltyHistoryItems extends StatelessWidget {
+  const LoyaltyHistoryItems({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      spacing: 13,
-      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          AppStrings.loyaltyHistory,
-          style: AppTextStyles.font13BoldWhite.copyWith(
-            color: AppColors.white.withOpacity(0.82),
-          ),
-        ),
-        Container(
-          width: double.infinity,
-          padding: const EdgeInsets.all(12),
-          decoration: BoxDecoration(
-            color: AppColors.darkgrey.withOpacity(0.3),
-            borderRadius: BorderRadius.circular(13),
-            boxShadow: [
-              BoxShadow(
-                color: AppColors.black.withOpacity(0.15),
-                offset: Offset(0, 4),
-                blurRadius: 4,
-              ),
-            ],
-          ),
-          child: LoyalityHistoryItems(),
-        ),
+        LoyaltyHistoryCard(),
+        LoyaltyHistoryCard(),
+        LoyaltyHistoryCard(),
+        LoyaltyHistoryCard(),
       ],
     );
   }
 }
 
-class LoyalityHistoryItems extends StatelessWidget {
-  const LoyalityHistoryItems({super.key});
+class LoyaltyHistoryCard extends StatelessWidget {
+  const LoyaltyHistoryCard({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: AppColors.darkgrey.withOpacity(0.3),
+        borderRadius: BorderRadius.circular(13),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.black.withOpacity(0.15),
+            offset: const Offset(0, 4),
+            blurRadius: 4,
+          ),
+        ],
+      ),
+      child: LoyaltyHistoryItem(),
+    );
+  }
+}
+
+class LoyaltyHistoryItem extends StatelessWidget {
+  const LoyaltyHistoryItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +62,7 @@ class LoyalityHistoryItems extends StatelessWidget {
           ),
           child: Image.asset(AppImages.odeyssy),
         ),
-        SizedBox(width: 10),
+        const SizedBox(width: 10),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -71,14 +76,14 @@ class LoyalityHistoryItems extends StatelessWidget {
                 color: AppColors.white.withOpacity(0.34),
               ),
             ),
-            SizedBox(height: 7),
+            const SizedBox(height: 7),
             Text(
               AppStrings.credits,
               style: AppTextStyles.font16BoldYellow.copyWith(fontSize: 9),
             ),
           ],
         ),
-        Spacer(),
+        const Spacer(),
         Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.end,
@@ -98,7 +103,7 @@ class LoyalityHistoryItems extends StatelessWidget {
                       color: AppColors.white.withOpacity(0.3),
                       width: 1,
                     ),
-                    gradient: LinearGradient(
+                    gradient: const LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [AppColors.lightYellow, AppColors.darkYellow],
@@ -113,10 +118,10 @@ class LoyalityHistoryItems extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Icon(
-              size: 15,
               Icons.arrow_forward_ios_rounded,
+              size: 15,
               color: AppColors.lightYellow.withOpacity(0.28),
             ),
           ],
