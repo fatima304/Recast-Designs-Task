@@ -3,14 +3,20 @@ import 'package:recast_design_task/core/constants/app_colors.dart';
 import 'package:recast_design_task/core/constants/app_images.dart';
 import 'package:recast_design_task/core/constants/app_strings.dart';
 import 'package:recast_design_task/core/constants/app_text_styles.dart';
+import 'package:recast_design_task/core/utils/responsive_helper.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final horizontalPadding = ResponsiveHelper.getHorizontalPadding(context);
+    final topPadding = ResponsiveHelper.getVerticalPadding(context);
+    final avatarSize = ResponsiveHelper.getSize(context, 35);
+    final iconSize = ResponsiveHelper.getSize(context, 19);
+    
     return Padding(
-      padding: const EdgeInsets.only(top: 20, left: 17, right: 11),
+      padding: EdgeInsets.only(top: topPadding, left: horizontalPadding, right: horizontalPadding * 0.65),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -21,17 +27,21 @@ class HomeHeader extends StatelessWidget {
             children: [
               Text(
                 AppStrings.welcomeBack,
-                style: AppTextStyles.font10BoldWhite,
+                style: AppTextStyles.font10BoldWhite.copyWith(
+                  fontSize: ResponsiveHelper.getFontSize(context, 10),
+                ),
               ),
               Text(
                 AppStrings.profileName,
-                style: AppTextStyles.font16BoldYellow,
+                style: AppTextStyles.font16BoldYellow.copyWith(
+                  fontSize: ResponsiveHelper.getFontSize(context, 16),
+                ),
               ),
             ],
           ),
           Container(
-            width: 35,
-            height: 35,
+            width: avatarSize,
+            height: avatarSize,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: AppColors.lightgrey.withOpacity(0.2),
@@ -40,7 +50,7 @@ class HomeHeader extends StatelessWidget {
                 width: 1.5,
               ),
             ),
-            child: Image.asset(AppImages.user, width: 19, height: 19),
+            child: Image.asset(AppImages.user, width: iconSize, height: iconSize),
           ),
         ],
       ),

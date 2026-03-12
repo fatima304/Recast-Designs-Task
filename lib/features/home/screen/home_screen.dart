@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recast_design_task/core/constants/app_colors.dart';
+import 'package:recast_design_task/core/utils/responsive_helper.dart';
 import 'package:recast_design_task/features/home/widgets/home_header.dart';
 import 'package:recast_design_task/features/home/widgets/loyality_card.dart';
 import 'package:recast_design_task/features/home/widgets/venue_selection_section.dart';
@@ -14,11 +15,11 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 40),
+            SizedBox(height: ResponsiveHelper.getSize(context, 40)),
             HomeHeader(),
-            SizedBox(height: 10),
+            SizedBox(height: ResponsiveHelper.getMediumSpacing(context)),
             LoyalityCard(),
-            SizedBox(height: 10),
+            SizedBox(height: ResponsiveHelper.getMediumSpacing(context)),
             VenueSelectionSection(),
           ],
         ),
