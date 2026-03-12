@@ -21,16 +21,16 @@ class AppTextStyles {
       ).createShader(const Rect.fromLTWH(0, 0, 200, 20)),
   );
 
-    static  TextStyle font13BoldWhite = TextStyle(
+  static TextStyle font13BoldWhite = TextStyle(
     fontFamily: FontFamilyHelper.satoshiFamily,
     fontWeight: FontWeightHelper.bold,
     fontSize: 13,
     color: AppColors.white,
   );
-      static  TextStyle font7MediumWhite = TextStyle(
+  static TextStyle font10MediumWhite = TextStyle(
     fontFamily: FontFamilyHelper.satoshiFamily,
     fontWeight: FontWeightHelper.medium,
-    fontSize: 7,
+    fontSize: 10,
     color: AppColors.white,
   );
 }

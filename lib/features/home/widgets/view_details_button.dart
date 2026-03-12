@@ -8,10 +8,15 @@ class MoreDetailsButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+
     return GestureDetector(
       onTap: () {},
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 4),
+        padding: EdgeInsets.symmetric(
+          horizontal: 11,
+          vertical: 4,
+        ),
         decoration: BoxDecoration(
           color: Colors.transparent,
           borderRadius: BorderRadius.circular(9),
@@ -21,7 +26,10 @@ class MoreDetailsButton extends StatelessWidget {
           spacing: 2,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(AppStrings.moreDetails, style: AppTextStyles.font7MediumWhite),
+            Text(
+              AppStrings.moreDetails,
+              style: AppTextStyles.font10MediumWhite,
+            ),
             Icon(Icons.arrow_forward, color: Colors.white, size: 7),
           ],
         ),

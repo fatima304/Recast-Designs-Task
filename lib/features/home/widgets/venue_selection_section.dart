@@ -9,18 +9,20 @@ class VenueSelectionSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      padding: EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             AppStrings.venueSelection,
             style: AppTextStyles.font13BoldWhite.copyWith(
+              fontSize: 13,
               color: AppColors.white.withOpacity(0.82),
             ),
           ),
-          SizedBox(height: 10),
+          SizedBox(height: 16),
           VenueSelectionItems(),
         ],
       ),
