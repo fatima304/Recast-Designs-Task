@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:recast_design_task/core/constants/app_colors.dart';
 import 'package:recast_design_task/core/constants/app_strings.dart';
 import 'package:recast_design_task/core/constants/app_text_styles.dart';
-import 'package:recast_design_task/core/utils/responsive_helper.dart';
 import 'package:recast_design_task/features/home/widgets/venue_selection_items.dart';
 
 class VenueSelectionSection extends StatelessWidget {
@@ -10,23 +9,20 @@ class VenueSelectionSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final horizontalPadding = ResponsiveHelper.getSize(context, 10);
-    final verticalSpacing = ResponsiveHelper.getMediumSpacing(context);
-    final titleFontSize = ResponsiveHelper.getFontSize(context, 13);
     
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+      padding: EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             AppStrings.venueSelection,
             style: AppTextStyles.font13BoldWhite.copyWith(
-              fontSize: titleFontSize,
+              fontSize: 13,
               color: AppColors.white.withOpacity(0.82),
             ),
           ),
-          SizedBox(height: verticalSpacing),
+          SizedBox(height: 16),
           VenueSelectionItems(),
         ],
       ),

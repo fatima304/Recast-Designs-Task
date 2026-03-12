@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:recast_design_task/core/constants/app_colors.dart';
-import 'package:recast_design_task/core/constants/app_images.dart';
 import 'package:recast_design_task/core/constants/app_strings.dart';
 import 'package:recast_design_task/core/constants/app_text_styles.dart';
+import 'package:recast_design_task/features/home/widgets/common/food_images_row.dart';
 import 'package:recast_design_task/features/home/widgets/view_details_button.dart';
 
 class TotalOrdersWidget extends StatelessWidget {
@@ -34,20 +34,9 @@ class TotalOrdersWidget extends StatelessWidget {
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [imagesRow(), MoreDetailsButton()],
+          children: [FoodImagesRow(), MoreDetailsButton()],
         ),
       ],
     );
   }
-}
-
-Row imagesRow() {
-  return Row(
-    spacing: 3,
-    children: [
-      Image.asset(AppImages.food1),
-      Image.asset(AppImages.food2),
-      Image.asset(AppImages.food3),
-    ],
-  );
 }

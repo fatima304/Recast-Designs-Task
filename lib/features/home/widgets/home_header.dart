@@ -3,6 +3,7 @@ import 'package:recast_design_task/core/constants/app_colors.dart';
 import 'package:recast_design_task/core/constants/app_images.dart';
 import 'package:recast_design_task/core/constants/app_strings.dart';
 import 'package:recast_design_task/core/constants/app_text_styles.dart';
+import 'package:recast_design_task/core/routing/routes.dart';
 import 'package:recast_design_task/core/utils/responsive_helper.dart';
 
 class HomeHeader extends StatelessWidget {
@@ -14,9 +15,13 @@ class HomeHeader extends StatelessWidget {
     final topPadding = ResponsiveHelper.getVerticalPadding(context);
     final avatarSize = ResponsiveHelper.getSize(context, 35);
     final iconSize = ResponsiveHelper.getSize(context, 19);
-    
+
     return Padding(
-      padding: EdgeInsets.only(top: topPadding, left: horizontalPadding, right: horizontalPadding * 0.65),
+      padding: EdgeInsets.only(
+        top: topPadding,
+        left: horizontalPadding,
+        right: horizontalPadding * 0.65,
+      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -50,7 +55,16 @@ class HomeHeader extends StatelessWidget {
                 width: 1.5,
               ),
             ),
-            child: Image.asset(AppImages.user, width: iconSize, height: iconSize),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, Routes.profileScreen);
+              },
+              child: Image.asset(
+                AppImages.user,
+                width: iconSize,
+                height: iconSize,
+              ),
+            ),
           ),
         ],
       ),
