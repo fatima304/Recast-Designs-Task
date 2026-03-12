@@ -5,6 +5,7 @@ class AppStrings {
   static const String welcomeBack = 'Welcome Back,';
   static const String alterNow = 'Alter Now';
   static const String loyaltyPoints = 'Loyalty Points';
+  static const String points = '21,750';
   static const String totalOrders = 'Total Orders';
   static const String moreDetails = 'More details';
   static const String venueSelection = 'Venue Selection';

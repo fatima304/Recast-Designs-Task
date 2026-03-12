@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:recast_design_task/core/routing/routes.dart';
 import 'core/routing/app_router.dart';
 
 class RecastDesignsApp extends StatelessWidget {
@@ -9,6 +10,7 @@ class RecastDesignsApp extends StatelessWidget {
 Widget build(BuildContext context) {
   return MaterialApp(
     debugShowCheckedModeBanner: false,
+    initialRoute: Routes.homeScreen,
     onGenerateRoute: appRouter.generateRoute,
   );
 }
