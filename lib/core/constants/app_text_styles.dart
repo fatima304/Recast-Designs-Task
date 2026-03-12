@@ -33,4 +33,18 @@ class AppTextStyles {
     fontSize: 10,
     color: AppColors.white,
   );
+
+  static TextStyle font9BoldDarkYellow = TextStyle(
+    fontFamily: FontFamilyHelper.satoshiFamily,
+    fontWeight: FontWeightHelper.bold,
+    fontSize: 9,
+    color: AppColors.darkYellow,
+  );
+
+    static TextStyle font8BoldBlack = TextStyle(
+    fontFamily: FontFamilyHelper.satoshiFamily,
+    fontWeight: FontWeightHelper.bold,
+    fontSize: 8,
+    color: AppColors.black,
+  );
 }

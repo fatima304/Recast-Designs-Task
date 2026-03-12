@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:recast_design_task/core/constants/app_colors.dart';
 import 'package:recast_design_task/features/home/widgets/loyality_items.dart';
 
-class LoyalityCard extends StatelessWidget {
-  const LoyalityCard({super.key});
+class LoyaltyCard extends StatelessWidget {
+  const LoyaltyCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class LoyalityCard extends StatelessWidget {
           ),
         ],
       ),
-      child: LoyalityItems(),
+      child: LoyaltyItems(),
     );
   }
 }

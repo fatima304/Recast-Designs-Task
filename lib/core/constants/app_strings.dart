@@ -11,7 +11,13 @@ class AppStrings {
   static const String venueSelection = 'Venue Selection';
 
   // Profile Screen Strings 
+  static const String yourProfile = 'Your Profile';
   static const String profileName = 'Asmar Ajlouni';
   static const String profileNumber = '+962 234 567 2349';
+  static const String edit = 'Edit';
   static const String loyaltyHistory = 'Loyalty History';
+  static const String credits = '125.32 JD • 230 Credits';
+  static const String nobikoBistro = 'Nobiko Bistro';
+  static const String jan2025 = '06 Jan, 2025';
+  static const String threeTwentyFiveCredits = '325 Credits';
 }

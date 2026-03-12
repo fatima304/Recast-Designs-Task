@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: ResponsiveHelper.getSize(context, 40)),
             HomeHeader(),
             SizedBox(height: ResponsiveHelper.getMediumSpacing(context)),
-            LoyalityCard(),
+            LoyaltyCard(),
             SizedBox(height: ResponsiveHelper.getMediumSpacing(context)),
             VenueSelectionSection(),
           ],
