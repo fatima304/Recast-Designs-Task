@@ -11,7 +11,10 @@ This project implements a clean and modern Flutter UI featuring a home screen wi
 The application includes two main screens:
 
 1. **Home Screen** - Features venue selection with restaurant listings and filtering options
+<img width="1080" height="2340" alt="Screenshot_1773369507" src="https://github.com/user-attachments/assets/93871cc5-94f8-47fe-85fa-2d121ac33aa2" />
+
 2. **Profile Screen** - User profile with loyalty history and account settings
+<img width="1080" height="2340" alt="Screenshot_1773369433" src="https://github.com/user-attachments/assets/4d5f06b2-b1c2-4255-a87f-e7b88e34788a" />
 
 ## Implementation Notes
 
