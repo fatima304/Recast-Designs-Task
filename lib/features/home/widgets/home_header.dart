@@ -3,6 +3,7 @@ import 'package:recast_design_task/core/constants/app_colors.dart';
 import 'package:recast_design_task/core/constants/app_images.dart';
 import 'package:recast_design_task/core/constants/app_strings.dart';
 import 'package:recast_design_task/core/constants/app_text_styles.dart';
+import 'package:recast_design_task/core/constants/font_weight_helper.dart';
 import 'package:recast_design_task/core/routing/routes.dart';
 import 'package:recast_design_task/core/utils/responsive_helper.dart';
 
@@ -13,8 +14,6 @@ class HomeHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     final horizontalPadding = ResponsiveHelper.getHorizontalPadding(context);
     final topPadding = ResponsiveHelper.getVerticalPadding(context);
-    final avatarSize = ResponsiveHelper.getSize(context, 35);
-    final iconSize = ResponsiveHelper.getSize(context, 19);
 
     return Padding(
       padding: EdgeInsets.only(
@@ -32,21 +31,17 @@ class HomeHeader extends StatelessWidget {
             children: [
               Text(
                 AppStrings.welcomeBack,
-                style: AppTextStyles.font10BoldWhite.copyWith(
-                  fontSize: ResponsiveHelper.getFontSize(context, 10),
+                style: AppTextStyles.font14BoldWhite.copyWith(
+                  fontWeight: FontWeightHelper.regular,
                 ),
               ),
               Text(
                 AppStrings.profileName,
-                style: AppTextStyles.font16BoldYellow.copyWith(
-                  fontSize: ResponsiveHelper.getFontSize(context, 16),
-                ),
+                style: AppTextStyles.font22BoldYellow,
               ),
             ],
           ),
           Container(
-            width: avatarSize,
-            height: avatarSize,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: AppColors.lightgrey.withOpacity(0.2),
@@ -59,11 +54,7 @@ class HomeHeader extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(context, Routes.profileScreen);
               },
-              child: Image.asset(
-                AppImages.user,
-                width: iconSize,
-                height: iconSize,
-              ),
+              child: Image.asset(AppImages.user, width: 40, height: 40),
             ),
           ),
         ],

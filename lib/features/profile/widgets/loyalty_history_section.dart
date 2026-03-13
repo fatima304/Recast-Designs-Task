@@ -10,12 +10,13 @@ class LoyaltyHistorySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      spacing: 13,
+      spacing: 20,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           AppStrings.loyaltyHistory,
           style: AppTextStyles.font13BoldWhite.copyWith(
+            fontSize: 14,
             color: AppColors.white.withOpacity(0.82),
           ),
         ),

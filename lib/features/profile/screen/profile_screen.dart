@@ -19,9 +19,9 @@ class ProfileScreen extends StatelessWidget {
             children: [
               SizedBox(height: 50),
               ProfileAppBar(),
-              SizedBox(height: 15),
+              SizedBox(height: 20),
               ProfileHeader(),
-              SizedBox(height: 30),
+              SizedBox(height: 35),
               LoyaltyHistorySection(),
             ],
           ),

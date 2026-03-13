@@ -11,25 +11,32 @@ class ProfileHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Image.asset(AppImages.profile, width: 50, height: 50),
-        SizedBox(width: 10),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              AppStrings.profileName,
-              style: AppTextStyles.font13BoldWhite.copyWith(fontSize: 11),
-            ),
-            Text(
-              AppStrings.profileNumber,
-              style: AppTextStyles.font9BoldDarkYellow,
-            ),
-          ],
+        Image.asset(AppImages.profile, width: 60, height: 60),
+        const SizedBox(width: 16),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                AppStrings.profileName,
+                style: AppTextStyles.font13BoldWhite.copyWith(
+                  fontSize: 14,
+                  color: AppColors.white.withOpacity(0.9),
+                ),
+              ),
+              Text(
+                AppStrings.profileNumber,
+                style: AppTextStyles.font9BoldDarkYellow.copyWith(
+                  fontSize: 13,
+                ),
+              ),
+            ],
+          ),
         ),
-        Spacer(),
         Text(
           AppStrings.edit,
           style: AppTextStyles.font9BoldDarkYellow.copyWith(
+            fontSize: 12,
             color: AppColors.lightYellow,
           ),
         ),

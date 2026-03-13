@@ -1,16 +1,23 @@
-# recast_design_task
+# Recast Design Task
 
-A new Flutter project.
+A Flutter UI implementation based on a Figma design for a venue/restaurant discovery application.
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+This project implements a clean and modern Flutter UI featuring a home screen with venue selection and a user profile screen. The design follows the provided Figma specifications with custom fonts and dynamic data integration.
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The application includes two main screens:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Home Screen** - Features venue selection with restaurant listings and filtering options
+2. **Profile Screen** - User profile with loyalty history and account settings
+
+## Implementation Notes
+
+- **UI Structure**: Built with Flutter's Material Design and custom widgets
+- **Widget Composition**: Modular widget architecture for reusable components
+- **Dynamic Data**: Venue information and user data with mock data integration
+- **Custom Fonts**: Satoshi font family for consistent typography
+- **Assets**: Restaurant and venue images from the assets folder
+- **Navigation**: Clean routing between home and profile screens

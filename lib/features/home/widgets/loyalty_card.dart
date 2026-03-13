@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recast_design_task/core/constants/app_colors.dart';
-import 'package:recast_design_task/features/home/widgets/loyality_items.dart';
+import 'package:recast_design_task/features/home/widgets/loyalty_items.dart';
 
 class LoyaltyCard extends StatelessWidget {
   const LoyaltyCard({super.key});
@@ -11,8 +11,8 @@ class LoyaltyCard extends StatelessWidget {
     
     return Container(
       width: double.infinity,
-      margin: EdgeInsets.symmetric(horizontal: 16),
-      padding: EdgeInsets.all(12),
+      margin: EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: AppColors.darkgrey.withOpacity(0.3),
         borderRadius: BorderRadius.circular(13),

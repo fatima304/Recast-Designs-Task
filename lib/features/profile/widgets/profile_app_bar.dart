@@ -15,7 +15,7 @@ class ProfileAppBar extends StatelessWidget {
         Text(
           AppStrings.yourProfile,
           style: AppTextStyles.font13BoldWhite.copyWith(
-            fontSize: 16,
+            fontSize: 18,
             color: AppColors.white.withOpacity(0.75),
           ),
         ),

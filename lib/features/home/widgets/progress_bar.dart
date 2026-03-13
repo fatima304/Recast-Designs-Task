@@ -10,7 +10,7 @@ class CustomProgressBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 20.0,
+      height: 25.0,
       decoration: BoxDecoration(
         color: Colors.black,
         borderRadius: BorderRadius.circular(12.0),

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:recast_design_task/core/constants/app_colors.dart';
 import 'package:recast_design_task/core/constants/app_images.dart';
 import 'package:recast_design_task/core/constants/app_strings.dart';
 import 'package:recast_design_task/core/constants/app_text_styles.dart';
 
-class LoyalityHeader extends StatelessWidget {
-  const LoyalityHeader({super.key});
+class LoyaltyHeader extends StatelessWidget {
+  const LoyaltyHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,15 +19,17 @@ class LoyalityHeader extends StatelessWidget {
           children: [
             Text(
               AppStrings.alterNow,
-              style: AppTextStyles.font10BoldWhite.copyWith(fontSize: 9),
+              style: AppTextStyles.font14BoldWhite.copyWith(
+                color: AppColors.white.withOpacity(0.5),
+              ),
             ),
             Text(
               AppStrings.loyaltyPoints,
-              style: AppTextStyles.font13BoldWhite,
+              style: AppTextStyles.font13BoldWhite.copyWith(fontSize: 17),
             ),
           ],
         ),
-        Image.asset(AppImages.user, width: 19, height: 19),
+        Image.asset(AppImages.user, width: 40, height: 40),
       ],
     );
   }

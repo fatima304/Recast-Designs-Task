@@ -3,7 +3,7 @@ class AppStrings {
 
   // Home Screen Strings 
   static const String welcomeBack = 'Welcome Back,';
-  static const String alterNow = 'Alter Now';
+  static const String alterNow = 'AlterNow';
   static const String loyaltyPoints = 'Loyalty Points';
   static const String points = '21,750';
   static const String totalOrders = 'Total Orders';

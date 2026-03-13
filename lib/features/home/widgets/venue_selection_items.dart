@@ -13,15 +13,15 @@ class VenueSelectionItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final venues = VenueData.venues;
-    final List<double> itemHeights = [170, 200, 210, 220];
+    final List<double> itemHeights = [150, 180, 190, 170];
 
     return MasonryGridView.count(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+      padding: EdgeInsets.zero,
       crossAxisCount: 2,
-      mainAxisSpacing: 7,
-      crossAxisSpacing: 7,
+      mainAxisSpacing: 10,
+      crossAxisSpacing: 10,
       itemCount: venues.length,
       itemBuilder: (context, index) {
         return Container(
@@ -29,7 +29,7 @@ class VenueSelectionItems extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             image: DecorationImage(
-              image: AssetImage(venues[index].imageUrl),
+              image: AssetImage(venues[index].image),
               fit: BoxFit.cover,
             ),
           ),
@@ -46,10 +46,10 @@ class VenueSelectionItems extends StatelessWidget {
                   child: Container(
                     width: double.infinity,
                     padding: EdgeInsets.only(
-                      left: ResponsiveHelper.getSize(context, 15),
-                      right: ResponsiveHelper.getSize(context, 10),
-                      bottom: ResponsiveHelper.getSize(context, 12),
-                      top: ResponsiveHelper.getSize(context, 20),
+                      top: ResponsiveHelper.getSize(context, 8),
+                      left: ResponsiveHelper.getSize(context, 16),
+                      right: ResponsiveHelper.getSize(context, 12),
+                      bottom: ResponsiveHelper.getSize(context, 8),
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
@@ -63,30 +63,25 @@ class VenueSelectionItems extends StatelessWidget {
                               children: [
                                 Text(
                                   venues[index].subTitle,
-                                  style: AppTextStyles.font10BoldWhite.copyWith(
-                                    fontSize: ResponsiveHelper.getFontSize(
-                                      context,
-                                      9,
-                                    ),
-                                    color: AppColors.white.withOpacity(0.7),
-                                  ),
+                                  style: AppTextStyles.font14BoldWhite
+                                      .copyWith(
+                                        fontSize: 9,
+                                        color: AppColors.white.withOpacity(
+                                          0.8,
+                                        ),
+                                      ),
                                 ),
                                 Text(
                                   venues[index].title,
-                                  style: AppTextStyles.font16BoldYellow
-                                      .copyWith(
-                                        fontSize: ResponsiveHelper.getFontSize(
-                                          context,
-                                          15,
-                                        ),
-                                      ),
+                                  style: AppTextStyles.font22BoldYellow
+                                      .copyWith(fontSize: 15),
                                 ),
                               ],
                             ),
                             GlassIconButton(
                               icon: Icons.arrow_forward_ios,
-                              containerSize: 30,
-                              iconSize: 10,
+                              containerSize: 40,
+                              iconSize: 15,
                             ),
                           ],
                         ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:recast_design_task/core/constants/app_colors.dart';
 import 'package:recast_design_task/core/constants/app_strings.dart';
 import 'package:recast_design_task/core/constants/app_text_styles.dart';
 import 'package:recast_design_task/features/home/widgets/venue_selection_items.dart';
@@ -11,15 +10,14 @@ class VenueSelectionSection extends StatelessWidget {
   Widget build(BuildContext context) {
     
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 10),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             AppStrings.venueSelection,
-            style: AppTextStyles.font13BoldWhite.copyWith(
-              fontSize: 13,
-              color: AppColors.white.withOpacity(0.82),
+            style: AppTextStyles.font14BoldWhite.copyWith(
+              fontSize: 16,
             ),
           ),
           SizedBox(height: 16),

@@ -14,19 +14,19 @@ class TotalOrdersWidget extends StatelessWidget {
       spacing: 4,
       children: [
         Row(
-          spacing: 3,
+          spacing: 5,
           children: [
             Text(
               AppStrings.totalOrders,
-              style: AppTextStyles.font10BoldWhite.copyWith(
-                fontSize: 9,
+              style: AppTextStyles.font14BoldWhite.copyWith(
+                fontSize: 12,
                 color: AppColors.white.withOpacity(0.57),
               ),
             ),
             Text(
               '24',
-              style: AppTextStyles.font10BoldWhite.copyWith(
-                fontSize: 9,
+              style: AppTextStyles.font14BoldWhite.copyWith(
+                fontSize: 12,
                 color: AppColors.softYellow,
               ),
             ),

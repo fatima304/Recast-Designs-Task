@@ -1,11 +1,11 @@
 class VenueModel {
   final String title;
   final String subTitle;
-  final String imageUrl;
+  final String image;
 
   const VenueModel({
     required this.title,
     required this.subTitle,
-    required this.imageUrl,
+    required this.image,
   });
 }

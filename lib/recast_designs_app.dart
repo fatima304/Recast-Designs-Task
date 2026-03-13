@@ -10,7 +10,7 @@ class RecastDesignsApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: Routes.profileScreen,
+      initialRoute: Routes.homeScreen,
       onGenerateRoute: appRouter.generateRoute,
     );
   }

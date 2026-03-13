@@ -3,25 +3,17 @@ import 'package:recast_design_task/features/home/data/models/venue_model.dart';
 
 class VenueData {
   static const List<VenueModel> venues = [
-    VenueModel(
-      title: 'Ceano',
-      subTitle: 'Nikkei',
-      imageUrl: AppImages.ceano,
-    ),
+    VenueModel(title: 'Ceano', subTitle: 'Nikkei', image: AppImages.ceano),
     VenueModel(
       title: 'Nobiko',
       subTitle: 'Restaurant',
-      imageUrl: AppImages.nobiko,
+      image: AppImages.nobiko,
     ),
-    VenueModel(
-      title: 'Dovely',
-      subTitle: 'Casual',
-      imageUrl: AppImages.dovely,
-    ),
+    VenueModel(title: 'Dovely', subTitle: 'Casual', image: AppImages.dovely),
     VenueModel(
       title: 'Olivestree',
       subTitle: 'Bakery',
-      imageUrl: AppImages.oliverstree,
+      image: AppImages.oliverstree,
     ),
   ];
 }

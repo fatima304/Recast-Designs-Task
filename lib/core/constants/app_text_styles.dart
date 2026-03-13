@@ -4,20 +4,20 @@ import 'package:recast_design_task/core/constants/font_family_helper.dart';
 import 'package:recast_design_task/core/constants/font_weight_helper.dart';
 
 class AppTextStyles {
-  static TextStyle font10BoldWhite = TextStyle(
+  static TextStyle font14BoldWhite = TextStyle(
     fontFamily: FontFamilyHelper.satoshiFamily,
     fontWeight: FontWeightHelper.bold,
-    fontSize: 10,
-    color: AppColors.white.withOpacity(0.5),
+    fontSize: 14,
+    color: AppColors.white.withOpacity(0.8),
   );
 
-  static TextStyle font16BoldYellow = TextStyle(
+  static TextStyle font22BoldYellow = TextStyle(
     fontFamily: FontFamilyHelper.satoshiFamily,
     fontWeight: FontWeightHelper.bold,
-    fontSize: 16,
+    fontSize: 22,
     foreground: Paint()
       ..shader = LinearGradient(
-        colors: [AppColors.lightYellow, AppColors.darkYellow],
+        colors: [AppColors.darkYellow, AppColors.lightYellow],
       ).createShader(const Rect.fromLTWH(0, 0, 200, 20)),
   );
 
@@ -41,10 +41,10 @@ class AppTextStyles {
     color: AppColors.darkYellow,
   );
 
-    static TextStyle font8BoldBlack = TextStyle(
+  static TextStyle font10BoldBlack = TextStyle(
     fontFamily: FontFamilyHelper.satoshiFamily,
-    fontWeight: FontWeightHelper.bold,
-    fontSize: 8,
+    fontWeight: FontWeightHelper.extraBold,
+    fontSize: 10,
     color: AppColors.black,
   );
 }
